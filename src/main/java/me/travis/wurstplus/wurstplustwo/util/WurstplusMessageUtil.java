@@ -19,15 +19,16 @@ public class WurstplusMessageUtil {
 
 	public static ChatFormatting g = ChatFormatting.GOLD;
 	public static ChatFormatting b = ChatFormatting.BLUE;
+	public static ChatFormatting p = ChatFormatting.PURPLE;
 	public static ChatFormatting a = ChatFormatting.DARK_AQUA;
 	public static ChatFormatting r = ChatFormatting.RESET;
 
-	public static String opener = g + Wurstplus.WURSTPLUS_NAME + ChatFormatting.GRAY + " > " + r;
+	public static String opener = g + "[ZHack] " + r;
 
 	public static void toggle_message(WurstplusHack module) {
 		if (module.is_active()) {
 			if (module.get_tag().equals("AutoCrystal")) {
-				client_message_simple(opener + "we" + ChatFormatting.DARK_GREEN + " gaming ");
+				client_message_simple(opener + "CrystalAura" + ChatFormatting.DARK_GREEN + " Enabled ");
 			} else {
 				client_message_simple(opener + r + module.get_name() + ChatFormatting.DARK_GREEN + " Enabled");
 			}			
@@ -54,15 +55,15 @@ public class WurstplusMessageUtil {
 	}
 
 	public static void send_client_message_simple(String message) {
-		client_message(ChatFormatting.GOLD + Wurstplus.WURSTPLUS_NAME + " " + r + message);
+		client_message(ChatFormatting.GOLD + "[ZHack]" + " " + r + message);
 	}
 
 	public static void send_client_message(String message) {
-		client_message(ChatFormatting.GOLD + Wurstplus.WURSTPLUS_NAME + " " + r + message);
+		client_message(ChatFormatting.GOLD + "[ZHack]" + " " + r + message);
 	}
 
 	public static void send_client_error_message(String message) {
-		client_message(ChatFormatting.RED + Wurstplus.WURSTPLUS_NAME + " " + r + message);
+		client_message(ChatFormatting.RED + "[ZHack]" + " " + r + message);
 	}
 
 	public static class ChatMessage extends TextComponentBase {
