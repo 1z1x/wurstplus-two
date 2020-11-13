@@ -22,8 +22,8 @@ public class Wurstplus {
 	@Mod.Instance
 	private static Wurstplus MASTER;
 
-	public static final String WURSTPLUS_NAME = "Wurst+ 2";
-	public static final String WURSTPLUS_VERSION = "1.0";
+	public static final String WURSTPLUS_NAME = "Z hack";
+	public static final String WURSTPLUS_VERSION = "0.1.2";
 	public static final String WURSTPLUS_SIGN = " ";
 
 	public static final int WURSTPLUS_KEY_GUI = Keyboard.KEY_RSHIFT;
@@ -66,7 +66,7 @@ public class Wurstplus {
 
 		send_minecraft_log("initialising guis");
 
-		Display.setTitle("Wurst+ 2");
+		Display.setTitle("Z Hack");
 		click_gui = new WurstplusGUI();
 		click_hud = new WurstplusHUD();
 
