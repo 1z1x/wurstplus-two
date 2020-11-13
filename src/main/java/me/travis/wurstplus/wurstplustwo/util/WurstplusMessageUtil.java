@@ -19,6 +19,7 @@ public class WurstplusMessageUtil {
 
 	public static ChatFormatting g = ChatFormatting.GOLD;
 	public static ChatFormatting b = ChatFormatting.BLUE;
+	public static ChatFormatting p = ChatFormatting.LIGHT_PURPLE;
 	public static ChatFormatting a = ChatFormatting.DARK_AQUA;
 	public static ChatFormatting r = ChatFormatting.RESET;
 
@@ -33,7 +34,7 @@ public class WurstplusMessageUtil {
 			}			
 		} else {
 			if (module.get_tag().equals("AutoCrystal")) {
-				client_message_simple(opener + "we aint" + ChatFormatting.RED + " gaming " + r + "no more");
+				client_message_simple(opener + "CrystalAura" + ChatFormatting.RED + " Disabled ");
 			} else {
 				client_message_simple(opener + r + module.get_name() + ChatFormatting.RED + " Disabled");
 			}
@@ -58,7 +59,7 @@ public class WurstplusMessageUtil {
 	}
 
 	public static void send_client_message(String message) {
-		client_message(ChatFormatting.GOLD + "[ZHack]" + " " + r + message);
+		client_message(ChatFormatting.LIGHT_PURPLE + "[ZHack]" + " " + r + message);
 	}
 
 	public static void send_client_error_message(String message) {
