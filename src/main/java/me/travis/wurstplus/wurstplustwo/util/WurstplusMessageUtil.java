@@ -19,7 +19,6 @@ public class WurstplusMessageUtil {
 
 	public static ChatFormatting g = ChatFormatting.GOLD;
 	public static ChatFormatting b = ChatFormatting.BLUE;
-	public static ChatFormatting p = ChatFormatting.PURPLE;
 	public static ChatFormatting a = ChatFormatting.DARK_AQUA;
 	public static ChatFormatting r = ChatFormatting.RESET;
 
